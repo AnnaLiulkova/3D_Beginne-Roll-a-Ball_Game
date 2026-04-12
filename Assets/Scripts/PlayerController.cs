@@ -27,15 +27,26 @@ public class PlayerController : MonoBehaviour
         movementX = movementVector.x; 
         movementY = movementVector.y; 
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject); 
+            winTextObject.gameObject.SetActive(true);
+            winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
+        }
+    }
+
     void SetCountText() 
     {
-       countText.text =  "Count: " + count.ToString();
+        countText.text =  "Count: " + count.ToString();
        
-       if (count >= 12)
-       {
+        if (count >= 12)
+        {
            winTextObject.SetActive(true);
-       }
+           Destroy(GameObject.FindGameObjectWithTag("Enemy"));
+        }
     }
 
     void FixedUpdate() 
@@ -47,10 +58,10 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter (Collider other) 
     {
        if (other.gameObject.CompareTag("PickUp")) 
-       {
+        {
            other.gameObject.SetActive(false);
            count = count + 1;
            SetCountText();
-       }
+        }
     }
 }
