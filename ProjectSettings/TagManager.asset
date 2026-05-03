@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PickUp
   - Enemy
+  - SuperBonus
+  - Obstacle
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -13,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Obstacle
+  - Player
+  - Enemy
+  - Pickup
   - 
   - 
   - 
