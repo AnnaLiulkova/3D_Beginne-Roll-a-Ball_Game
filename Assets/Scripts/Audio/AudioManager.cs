@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -35,6 +36,11 @@ public class AudioManager : MonoBehaviour
             musicSource.clip = backgroundMusic;
             musicSource.loop = true; 
             musicSource.Play();
+            
+            if (!musicSource.isPlaying)
+            {
+                musicSource.Play();
+            }
         }
         
         float savedMusicVol = PlayerPrefs.GetFloat("MusicVol", 1f);

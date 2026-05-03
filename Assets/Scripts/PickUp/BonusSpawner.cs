@@ -23,13 +23,6 @@ public class BonusSpawner : MonoBehaviour
 
     void Start()
     {
-        if (gameObject.name.Contains("(Clone)"))
-        {
-            Debug.LogWarning("Spawner detected on a Clone! Disabling to prevent crash.");
-            enabled = false;
-            return;
-        }
-
         StartCoroutine(SpawnSuperBonuses());
     }
 

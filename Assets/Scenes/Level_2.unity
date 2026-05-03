@@ -2340,10 +2340,10 @@ MonoBehaviour:
     - m_Text: Blue
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: Red
+    - m_Text: Magenta
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
-    - m_Text: Green
+    - m_Text: Aqua
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
@@ -3341,7 +3341,7 @@ MonoBehaviour:
   spawnAreaX: 19
   spawnAreaZ: 19
   spawnHeight: 0.5
-  superSpawnRate: 5
+  superSpawnRate: 20
   checkRadius: 1
   obstacleMask:
     serializedVersion: 2
@@ -11934,7 +11934,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -20229,9 +20229,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -32, y: -32}
-  m_SizeDelta: {x: 45, y: 45}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -10, y: -10}
+  m_SizeDelta: {x: 55, y: 55}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1097760244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32076,7 +32076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
+  m_AnchoredPosition: {x: 13, y: -12}
   m_SizeDelta: {x: 304.4337, y: 46.4087}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2018242523
